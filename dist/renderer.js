@@ -91,15 +91,15 @@ define('transitions/default',["styliseur"], function(styliseur) {
     document: function(selection, attributer) {
       selection
         .transition()
-        .delay(150)
-        .duration(700)
+        .delay(0)
+        .duration(10)
         .call(attributer);
     },
     canvas: function (selection, attributer) {
       selection
         .transition()
-        .delay(150)
-        .duration(900)
+        .delay(0)
+        .duration(10)
         .call(attributer)
         .call(styliseur);
     },
@@ -107,8 +107,8 @@ define('transitions/default',["styliseur"], function(styliseur) {
       selection
         .style("opacity", 0.0)
         .transition()
-        .delay(150)
-        .duration(900)
+        .delay(0)
+        .duration(10)
         .call(attributer)
         .call(styliseur);
     },
@@ -116,31 +116,31 @@ define('transitions/default',["styliseur"], function(styliseur) {
       selection
         .style("opacity", 0.0)
         .transition()
-        .delay(150)
-        .duration(900)
+        .delay(0)
+        .duration(10)
         .call(attributer)
         .call(styliseur);
     },
     exits: function (selection, attributer) {
       selection
         .transition()
-        .duration(100)
+        .duration(10)
         .style("opacity", 0.0)
         .call(attributer);
     },
     shapes: function (shapes, attributer) {
       shapes
         .transition()
-        .delay(150)
-        .duration(900)
+        .delay(0)
+        .duration(10)
         .call(attributer)
         .call(styliseur);
     },
     labels: function (labels, attributer) {
       labels
         .transition()
-        .delay(150)
-        .duration(900)
+        .delay(0)
+        .duration(10)
         .call(attributer)
         .call(styliseur);
     }
