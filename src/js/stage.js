@@ -1,4 +1,8 @@
 define(["d3", "palette", "transitions/default"], function (d3, palette, defaults) {
+    
+    return {
+      create: function()
+      {
     var svg, main, zoom;
     var order = {
       digraph: 0,
@@ -242,6 +246,9 @@ define(["d3", "palette", "transitions/default"], function (d3, palette, defaults
         svgImage.src = "data:image/svg+xml;base64," + btoa(svgXml);
         return pngImage;
       }
-    };
+    }
+    }
+    } 
   }
+
 );
